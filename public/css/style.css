@@ -3,3 +3,111 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    height: 1000px;
+}
+
+/***** NAVBAR *****/
+
+.navbar {
+    width: 100%;
+    height: 44px;
+    padding: 0px;
+    background-color: red;
+    
+}
+
+.navbar .nav-links{
+    width: 100%;
+    height: 100%;
+    margin : 0px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #d6d6d6;
+    padding: 0px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.navbar .nav-links li .text-links {
+    padding-top: 3px;
+}
+
+.navbar .nav-links li {
+    list-style: none;
+}
+
+.navbar .nav-links img {
+    width : 20px ;
+    height : 20px ;
+}
+
+/***** INTRO *****/
+
+.intro-block {
+    width: 100%;
+    height: 600px;
+    padding: 80px 270px 57px 270px;
+    background-color: red;
+}
+
+.intro-block .info .title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 54px;
+    /* margin : 10px 0px 10px 0px; */
+    background-color: green;
+}
+
+.intro-block .info .title img {
+    padding-bottom: 5px;
+}
+
+.intro-block .info .tagline {
+    width: 100%;
+    height: 204px;
+    background-color: yellow;
+}
+
+.intro-block .info .intro-text {
+    width: 100%;
+    height: 160px;
+    background-color: blue;
+}
+
+.intro-block .info .tagline, .intro-text {
+    text-align: center;
+
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.intro-block .info .tagline h2 {
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 600;
+    letter-spacing: -.009em;
+}
+
+.intro-block .info .intro-text p {
+    font-size: 24px;
+    line-height: 1.33341;
+    font-weight: 400;
+    letter-spacing: .009em;
+}
+
+
+
