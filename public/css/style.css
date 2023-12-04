@@ -7,7 +7,6 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    height: 1000px;
 }
 
 /***** NAVBAR *****/
@@ -17,7 +16,6 @@ body {
     height: 44px;
     padding: 0px;
     background-color: red;
-    
 }
 
 .navbar .nav-links{
@@ -39,6 +37,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 100%;
 }
 
@@ -58,18 +57,109 @@ body {
 /***** INTRO *****/
 
 .intro-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     width: 100%;
-    height: 600px;
-    padding: 80px 270px 57px 270px;
-    background-color: red;
+    padding: 80px 270px;
 }
 
-.intro-block .info .title {
+.intro-block .title {
+    /* background-color: green; */
+    margin-bottom: 15px;
+}
+
+.intro-block h2 {
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    color: black;
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 600;
+    letter-spacing: -.009em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.intro-block p {
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 1.33341;
+    font-weight: 400;
+    letter-spacing: .009em;
+}
+
+.intro-block p, .intro-block h2 {
+    transition: font-size 0.8s;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+    .intro-block h2 {
+        font-size: 50px;
+    }
+
+    .intro-block P {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar .nav-links {
+        justify-content: flex-start;
+    }
+
+    .navbar .nav-links li a {
+        padding: 0px 20px; /* Garder le padding initial */
+        font-size: 14px;
+        transition: padding 0.5s; /* Ajouter une transition sur le padding */
+    }
+
+    .navbar .nav-links li:first-child a {
+        padding-right: 10px; /* Réduire le padding uniquement du côté droit du premier élément */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar .nav-links li a .text-links {
+        display: none;
+    }
+
+    .navbar .nav-links{
+        
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .intro-block h2 {
+        font-size: 40px;
+    }
+
+    .intro-block P {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .intro-block h2 {
+        font-size: 30px;
+    }
+
+    .intro-block P {
+        font-size: 10px;
+    }
+}
+
+
+
+/* .intro-block .info .title {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 54px;
-    /* margin : 10px 0px 10px 0px; */
     background-color: green;
 }
 
@@ -87,11 +177,11 @@ body {
     width: 100%;
     height: 160px;
     background-color: blue;
+    padding-top: 20px;
 }
 
 .intro-block .info .tagline, .intro-text {
     text-align: center;
-
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -107,7 +197,7 @@ body {
     line-height: 1.33341;
     font-weight: 400;
     letter-spacing: .009em;
-}
+} */
 
 
 
